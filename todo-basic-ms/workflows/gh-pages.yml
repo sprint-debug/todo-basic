@@ -1,20 +1,18 @@
-name: Deploy
+name: CI/CD Workflow test
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
 
 jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+      - uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install Dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -22,6 +20,5 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+          branch: gh-pages
+          folder: build
