@@ -2,7 +2,7 @@
   "name": "todo-basic-ms",
   "version": "0.1.1",
   "private": true,
-  "homepage": "https://minsangkwak.github.io/todo-basic-ms",
+  "homepage": "https://sprint-debug.github.io/todo-basic-ms",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
