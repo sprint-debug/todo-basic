@@ -1,6 +1,6 @@
 {
   "name": "todo-basic-ms",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "private": true,
   "homepage": "https://sprint-debug.github.io/todo-basic-ms",
   "dependencies": {
