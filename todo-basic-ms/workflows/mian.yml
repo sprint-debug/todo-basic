@@ -1,4 +1,4 @@
-name: CI/CD Workflow test
+name: CI/CD Workflow test 2
 
 on:
   push:
